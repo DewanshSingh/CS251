@@ -1,0 +1,5 @@
+dbus-daemon,1358,-rwxr-xr-x,1
+python3,1367,lrwxrwxrwx,1
+whoopsie,1726,-rwxr-xr-x,1
+Xwayland,1802,-rwxr-xr-x,1
+zeitgeist-daemon,2627,-rwxr-xr-x,1

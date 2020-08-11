@@ -1,0 +1,27 @@
+  937 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+  945 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 1169 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+ 1170 /usr/bin/whoopsie -f
+ 1459 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 1505 /usr/bin/ibus-daemon --daemonize --xim --address unix:tmpdir=/tmp/ibus
+ 1512 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 1546 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+ 1610 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+ 1618 /usr/bin/gnome-screensaver --no-daemon
+ 1631 /usr/bin/gnome-shell
+ 1653 /usr/bin/pulseaudio --start --log-target=syslog
+ 1882 /usr/bin/python3 /usr/bin/blueman-applet
+ 2015 /usr/bin/gnome-software --gapplication-service
+21763 /usr/bin/gnome-keyring-daemon --daemonize --login
+21810 /usr/bin/ibus-daemon --daemonize --xim --address unix:tmpdir=/tmp/ibus
+21824 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+21893 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+21914 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+21922 /usr/bin/gnome-screensaver --no-daemon
+21935 /usr/bin/gnome-shell
+21944 /usr/bin/pulseaudio --start --log-target=syslog
+22133 /usr/bin/python3 /usr/bin/blueman-applet
+22460 /usr/bin/gnome-software --gapplication-service
+23479 /usr/bin/zeitgeist-daemon
+25904 /usr/bin/nautilus --gapplication-service
+26045 /usr/bin/gedit --gapplication-service

@@ -1,0 +1,24 @@
+Assignment 7
+
+Q--nth fibonacci and infinite fibonacci
+
+we wrote a recursive function fib n = fib(n-2)+fib(n-1), with base cases of 0 and 1
+for infinite series we just just keep putting values in list by calling
+fibonacci function everytime.
+
+Q--nth prime and infinite primes
+
+we wrote a function called nth which computes nth prime, this function calls the
+function nprime.
+The function nprime makes a list of primes which range from 2 to 20*n(rough approximate for range of n primes)
+This function nprime uses a function prime which returns 1 when there are only 2 factors of of n are present 1 and n
+This is done using help of another function called factors which computes factors of n using `mod` and gives a list of factors
+
+so finally we take the first n elements from the list obtained from nprime and then
+select the last element(which is nth) out of that.
+
+note: here 2 functions implemented tak and las which are synonymous to take and last(predefined in haskell)
+but with integer type rather than int
+
+
+for the inifite case we only need to check if every number is prime or not, so we just check the factors everytime.

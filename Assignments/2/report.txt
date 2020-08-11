@@ -1,0 +1,62 @@
+Assignment 2 REPORT - ( 170192,170241)
+
+TASK_1
+
+First we extracted the tar file using
+$tar -xvzf package.tar.gz
+
+it contained two executable files runme1 and runme2
+
+We executed the following command , which redirected the stderr(fd 2) to stdout(fd 1) and redirected the stdout to some garbage.txt OR /dev/null
+
+$./runme1 2>&1 >garbage.txt
+OrR
+$./runme 2>&1 >/dev/null
+
+This displays
+four sigusr1
+
+So we found out that four was the required file descriptor and sigusr1 was the required signal
+
+We know run  the second executable file runme2 in the “background” (using “&” at the end of command)  and simultaneously redirecting its file descriptor four to stdout (fd1) and also redirecting the stdout to /dev/null
+
+$./runme2 4>&1 >/dev/null &
+This displays the “pid” of the process also
+We know send the required signal to the executable file
+$kill -10 “pid”
+-10 is for sigusr1  ( see using kill -l )
+
+This displayed the final secret message on the screen
+“ CS251 is really awesome!”
+
+
+TASK 2
+
+First we stored the processes of the /bin and /usr/bin directories by using the grep and piping.
+$ps aux | grep "/bin" > file1.csv
+now replaced the extra spaces with a comma.
+$tr -s '[:blank:]' ',' <file1.csv> file2.csv
+now we extracted columns 2 and 11(PID and address)
+$cut -d, -f2,11 file2.csv > file3.csv
+next we removed the "/usr/bin" from the address to get the name.
+$awk '{gsub("/usr/bin/","");print}' file3.csv > file4.csv
+now we are storing all files of /bin directory
+$ls -al /bin > file5.csv
+now replaced the extra spaces with a comma.
+$tr -s '[:blank:]' ',' <file5.csv> file6.csv
+now we are storing all files of /usr/bin directory
+$ls -al /usr/bin > file7.csv
+now replaced the extra spaces with a comma.
+$tr -s '[:blank:]' ',' <file7.csv> file8.csv
+next we removed first lines from both the latest files
+$sed -i 1d file6.csv
+$sed -i 1d file8.csv
+next we extracted the columns 1,2,9(permissions,no.of links,file name)
+$cut -d, -f1,2,9 file6.csv > file9.csv
+$cut -d, -f1,2,9 file8.csv > file10.csv
+next we appended the /bin file to /usr/bin file
+$cat file9.csv >> file10.csv
+now we joined the 'process' file with the 'files' file taking filename as the common field for join
+$join -t, --nocheck-order -1 2 -2 3 file4.csv file10.csv > file11.csv
+print ouptut. 
+$cat file11.csv

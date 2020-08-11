@@ -1,0 +1,8 @@
+Q3 -
+
+The myfoldl function is an implementation of the foldl function (It folds the list up from the left side)  using the foldr function .
+A foldl takes a binary function, a list to fold up, and a starting value .The binary function which takes two parameters  is called with the starting value and the last element  of the list and produces a new updated value. Then, the binary function is called again with the new value and the now new last  element of the list , and so on. Once we've walked over the whole list, only the updated value remains, which is what we've reduced the list to.
+The myfoldl function takes a binary function a starting value as z and a list.
+It returns a value of the same type of z .
+
+We have used a where binding in our myfoldl  function to make the step function for the sole purpose of passing it to the foldr function .

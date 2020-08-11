@@ -1,0 +1,140 @@
+Breakpoint 1 at 0x400ba6
+Breakpoint 2 at 0x400bc0
+Breakpoint 3 at 0x4007c0
+Breakpoint 4 at 0x400750
+
+Breakpoint 1, 0x0000000000400ba6 in add ()
+rax            0x40287ae147ae147b	4623080125484635259
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x3	3
+rsi            0x7fffffffe6d3	140737488348883
+rdi            0x7fffffffe6d0	140737488348880
+rbp            0x7fffffffe670	0x7fffffffe670
+rsp            0x7fffffffe670	0x7fffffffe670
+r8             0x1	1
+r9             0x1	1
+r10            0xd	13
+r11            0x7fffffffe460	140737488348256
+r12            0x4007f0	4196336
+r13            0x7fffffffe840	140737488349248
+r14            0x0	0
+r15            0x0	0
+rip            0x400ba6	0x400ba6 <add+4>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+Breakpoint 3, 0x00007ffff7bd5674 in mpy () from ./libmd.so
+rax            0x401c666666666666	4619679907765970534
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x3	3
+rsi            0x7fffffffe6d3	140737488348883
+rdi            0x7fffffffe6d0	140737488348880
+rbp            0x7fffffffe670	0x7fffffffe670
+rsp            0x7fffffffe670	0x7fffffffe670
+r8             0x1	1
+r9             0x1	1
+r10            0xa	10
+r11            0x7ffff7bd5670	140737349768816
+r12            0x4007f0	4196336
+r13            0x7fffffffe840	140737488349248
+r14            0x0	0
+r15            0x0	0
+rip            0x7ffff7bd5674	0x7ffff7bd5674 <mpy+4>
+eflags         0x206	[ PF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+Breakpoint 2, 0x0000000000400bc0 in sub ()
+rax            0x410c981000000000	4687288506672742400
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x7	7
+rsi            0x7fffffffe6d7	140737488348887
+rdi            0x7fffffffe6d0	140737488348880
+rbp            0x7fffffffe670	0x7fffffffe670
+rsp            0x7fffffffe670	0x7fffffffe670
+r8             0x0	0
+r9             0x0	0
+r10            0x0	0
+r11            0x0	0
+r12            0x4007f0	4196336
+r13            0x7fffffffe840	140737488349248
+r14            0x0	0
+r15            0x0	0
+rip            0x400bc0	0x400bc0 <sub+4>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+Breakpoint 4, 0x00007ffff7bd568e in divide () from ./libmd.so
+rax            0x40a9400000000000	4659325658235666432
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x2	2
+rsi            0x7fffffffe6d2	140737488348882
+rdi            0x7fffffffe6d0	140737488348880
+rbp            0x7fffffffe670	0x7fffffffe670
+rsp            0x7fffffffe670	0x7fffffffe670
+r8             0x0	0
+r9             0x0	0
+r10            0x9	9
+r11            0x7ffff7bd568a	140737349768842
+r12            0x4007f0	4196336
+r13            0x7fffffffe840	140737488349248
+r14            0x0	0
+r15            0x0	0
+rip            0x7ffff7bd568e	0x7ffff7bd568e <divide+4>
+eflags         0x206	[ PF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+
+Breakpoint 2, 0x0000000000400bc0 in sub ()
+rax            0x4114550c00000000	4689466622027497472
+rbx            0x0	0
+rcx            0x0	0
+rdx            0x4	4
+rsi            0x7fffffffe6d4	140737488348884
+rdi            0x7fffffffe6d0	140737488348880
+rbp            0x7fffffffe670	0x7fffffffe670
+rsp            0x7fffffffe670	0x7fffffffe670
+r8             0x0	0
+r9             0x0	0
+r10            0x0	0
+r11            0x0	0
+r12            0x4007f0	4196336
+r13            0x7fffffffe840	140737488349248
+r14            0x0	0
+r15            0x0	0
+rip            0x400bc0	0x400bc0 <sub+4>
+eflags         0x246	[ PF ZF IF ]
+cs             0x33	51
+ss             0x2b	43
+ds             0x0	0
+es             0x0	0
+fs             0x0	0
+gs             0x0	0
+17.440000
+70.290000
+-2108100.000000
+170.105263
+329910.000000
+[Inferior 1 (process 17533) exited normally]
